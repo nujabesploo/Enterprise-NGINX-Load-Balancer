@@ -1,0 +1,24 @@
+services:
+  backend1:
+    image: nginx
+    container_name: backend1
+    ports:
+      - "8081:80"
+    volumes:
+      - ./backend1:/usr/share/nginx/html
+
+  backend2:
+    image: nginx
+    container_name: backend2
+    ports:
+      - "8082:80"
+    volumes:
+      - ./backend2:/usr/share/nginx/html
+
+  backend3:
+    image: nginx
+    container_name: backend3
+    ports:
+      - "8083:80"
+    volumes:
+      - ./backend3:/usr/share/nginx/html
